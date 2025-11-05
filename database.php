@@ -1,0 +1,1 @@
+$mysqli = new mysqli('users', 'animals', 'donations');

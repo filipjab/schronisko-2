@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Adopcyjny</title>
+</head>
+<body>
+
+    <h1>Formularz Adopcyjny</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Dane Osobowe</legend>
+            <label for="imie">Imie:</label><br>
+            <input type="text" id="imie" name="imie" required><br><br>
+
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+
+            <label for="data_urodzenia">Data urodzenia:</label><br>
+            <input type="date" id="data_urodzenia" name="data_urodzenia" required><br><br>
+
+            <label for="email">Adres e-mail:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="telefon">Numer telefonu:</label><br>
+            <input type="tel" id="telefon" name="telefon"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informacje o Adopcji</legend>
+            <label for="rodzaj_zwierzecia">Rodzaj zwierzecia:</label><br>
+            <select id="rodzaj_zwierzecia" name="rodzaj_zwierzecia" required>
+                <option value="pies">Pies</option>
+                <option value="kot">Kot</option>
+                <option value="inne">Inne</option>
+            </select><br><br>
+
+            <label for="rasa">Rasa (jesli znana):</label><br>
+            <input type="text" id="rasa" name="rasa"><br><br>
+
+            <label for="wiek_zwierzecia">Szacowany wiek zwierzecia:</label><br>
+            <input type="number" id="wiek_zwierzecia" name="wiek_zwierzecia" min="0"><br><br>
+
+            <label for="opis_zwierzecia">Opis zwierzecia (jesli znany):</label><br>
+            <textarea id="opis_zwierzecia" name="opis_zwierzecia" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Opieka nad zwierzeciem</legend>
+          <label>Czy masz ogrod?</label><br>
+          <input type="radio" id="ogrod_tak" name="ogrod" value="tak">
+          <label for="ogrod_tak">Tak</label>
+          <input type="radio" id="ogrod_nie" name="ogrod" value="nie">
+          <label for="ogrod_nie">Nie</label><br><br>
+
+          <label for="liczba_osob">Liczba osob w gospodarstwie domowym:</label><br>
+          <input type="number" id="liczba_osob" name="liczba_osob" min="1"><br><br>
+
+          <label for="inne_zwierzeta">Czy posiadasz inne zwierzeta?</label><br>
+          <input type="text" id="inne_zwierzeta" name="inne_zwierzeta"><br><br>
+
+          <label for="powod_adopcji">Powod adopcji:</label><br>
+          <textarea id="powod_adopcji" name="powod_adopcji" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Wyœlij">
+    </form>
+
+</body>
+</html>
